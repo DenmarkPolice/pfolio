@@ -1,0 +1,42 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$black: #333333;
+$lessblack: #4f4f4f;
+$white: #ffffff;
+$yellow: #ffe735;
+$lightgrey: #eaeaea;
+
+
+$Cblack: #282828;
+$Cgreen: #00402e;
+$Clightgreen: #00805d;
+$Corange: #ffa500;
+$Cgrey: #686868;
+
+html {
+//  background-color: $lightgrey;
+}
+
+p {
+  //text-align: center;
+  display: inline-block;
+  font-family: 'Patua One', cursive;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 100px;
+
+}
+
+.warning {
+  -webkit-animation: slide 4s linear infinite;
+  background-image: repeating-linear-gradient(to top left, $Cblack, $Cblack 40%, $Clightgreen 40%, $Clightgreen 50%);
+  background-size: 100% 500px;
+
+  @-webkit-keyframes slide {
+    0%{ background-position: 0 0; }
+    100% { background-position: 0 500px; }
+  }
+}
