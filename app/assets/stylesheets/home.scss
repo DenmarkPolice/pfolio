@@ -10,33 +10,95 @@ $lightgrey: #eaeaea;
 
 
 $Cblack: #282828;
+$Cgrey: #686868;
 $Cgreen: #00402e;
 $Clightgreen: #00805d;
 $Corange: #ffa500;
-$Cgrey: #686868;
+
 
 html {
-//  background-color: $lightgrey;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $Cgrey;
+}
+
+nav {
+  background-color: $Clightgreen;
+  display: flex;
+  -webkit-box-shadow: 0px -7px 15px 6px #000000;
+  box-shadow: 0px -7px 15px 6px #000000;
+}
+
+nav > div {
+  padding: 0.5%;
+  margin-left: 20%;
+  display: relative;
+  height: 100%;
+}
+
+nav > div:hover {
+  background-color: $Cgreen;
 }
 
 p {
-  //text-align: center;
-  display: inline-block;
   font-family: 'Patua One', cursive;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-size: 100px;
-
+  margin: 0;
+  padding: 25px;
 }
 
 .warning {
   -webkit-animation: slide 4s linear infinite;
   background-image: repeating-linear-gradient(to top left, $Cblack, $Cblack 40%, $Clightgreen 40%, $Clightgreen 50%);
   background-size: 100% 500px;
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 100px;
 
   @-webkit-keyframes slide {
     0%{ background-position: 0 0; }
     100% { background-position: 0 500px; }
   }
+}
+
+//Portfolio icon
+.suitcase-1.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 15px;
+  height: 10px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  top: 23px;
+}
+
+.suitcase-1.icon:before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: -3px;
+  width: 5px;
+  height: 2px;
+  border-radius: 3px 3px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+.suitcase-1.icon:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  width: 7px;
+  height: 10px;
+  color: white;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
 }
