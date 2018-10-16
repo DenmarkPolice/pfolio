@@ -63,6 +63,14 @@ nav > a > p {
   padding-left: 6px;
 }
 
+svg {
+  fill: $Cblack;
+}
+
+svg:hover {
+  fill: $Corange;
+}
+
 nav > a:hover {
   background-color: $Corange;
   -webkit-box-shadow: inset 0px 0px 5px 0px $black;
