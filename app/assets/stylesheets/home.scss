@@ -65,7 +65,7 @@ nav > a > p {
 }
 
 .icon-container {
-  display: flex;
+  display: inline-flex;
   position: absolute;
   bottom: 0;
   flex-direction: row;
@@ -105,7 +105,7 @@ svg:hover {
 p {
   font-family: 'Patua One', cursive;
   margin: 0;
-  padding: 0px 0px 0px 0;
+  padding: 0;
 }
 
 .nav-excluder {
@@ -113,13 +113,19 @@ p {
 }
 
 header {
-  margin: 100px;
+  margin-left: 100px;
 }
 
-.paper {
+.introduction {
+  margin-top: 40px;
   display: flex;
-  width: 13.5vw;
-  height: 13.5vw;
+  flex-direction: row;
+}
+
+.border {
+  display: flex;
+  width: 14vw;
+  height: 14vw;
   justify-content: center;
   align-items: center;
   -webkit-box-shadow: 0px 0px 0px 1px $Myellow;
@@ -128,7 +134,18 @@ header {
 }
 
 .profile-pic {
+  margin-left: 1vw;
+  margin-right: 1vw;
   width: 12vw;
   height: 12vw;
   overflow: auto;
+}
+
+.introduction-text {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.introduction-text > p {
+  color: #36456A;
 }
