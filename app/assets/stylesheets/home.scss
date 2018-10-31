@@ -31,11 +31,11 @@ $bluegrey: #36456A;
 body {
   padding: 0;
   margin: 0;
-  background-color: $Mpurple;
+  background-color: $white;
 }
 
 a {
-  color: $bluegrey;
+  color: $white;
   font-weight:normal;
   text-decoration:none;
 }
@@ -45,7 +45,7 @@ nav {
   padding-top: 10vh;
   height: 100vh;
   width: 100px;
-  background-color: $Mdarkpurple;
+  background-color: $black;
   position: fixed;
 }
 
@@ -68,14 +68,15 @@ nav > a > p {
   display: inline-flex;
   position: absolute;
   bottom: 0;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 12vh;
 }
 
 .links {
   margin-left: 6.6px;
+  margin-bottom: 5px;
   display: inline-block;
-  width: 40px;
+  width: 35px;
   height: auto;
 }
 
@@ -83,7 +84,7 @@ svg {
   enable-background:new 0 0 438.549 438.549;
   width: 100%;
   display: flex;
-  fill: $Cblack;
+  fill: $white;
 
   -moz-transition: all .2s ease-in;
   -o-transition: all .2s ease-in;
@@ -96,10 +97,12 @@ svg:hover {
 }
 
 .scroll:hover {
-  background-color: $Corange;
-  -webkit-box-shadow: inset 0px 0px 5px 0px $black;
-  -moz-box-shadow: inset 0px 0px 5px 0px $black;
-  box-shadow: inset 0px 0px 5px 0px $black;
+  background-color: $white;
+  //-webkit-box-shadow: inset 0px 0px 5px 0px $black;
+  //-moz-box-shadow: inset 0px 0px 5px 0px $black;
+  //box-shadow: inset 0px 0px 5px 0px $black;
+  color: $black;
+
 }
 
 p {
