@@ -1,0 +1,23 @@
+addons:
+  postgresql: 9.6
+  code_climate:
+    repo_token: "<Get from Code Climate>"
+after_success:
+- bundle exec codeclimate-test-reporter
+before_script:
+- cp config/database.yml.travis config/database.yml
+- psql -c 'create database travis_ci_test;' -U postgres
+dist: trusty
+language: ruby
+rvm:
+- 2.5.1
+script:
+- bundle exec rails db:migrate RAILS_ENV=test
+- bundle exec rspec
+deploy:
+  provider: heroku
+  api_key:
+    secure: mSFidIQ3n6wUaTMXi9lDEj3yag4k/j7QwTaHndd0Dd0j5LwYqqCAzagqSYOKHuWr7AUJqkoBA23vcQ/uKW1qAMFTC6bAPZvqa5fe68yyBVQIHaQ6OMdnDXQZk8jdvWCvpBj36Y1cv0ZztGHgAVnoYUzihkEoFZXqEL//pX4caAFxQc7FlC2UOX2YCxoX1+7kjia7l1ZGZCOucKpg2ewVxqwoC86kO/qegSWeV5ekCWVVtyYBy/nzMUoSPh8yXHW0cmIn4f9GB/snNcwg+eNYtVMqs0OOGIciIcI/0AL7b/DRtynIVWERAqAeXr/nGdXD0A+b8CCk6igJ7RhQi6LcEWt3+MxemzhjCCmRYderes0nGahiUpLd3ZwEYqtti+GaOLnoYcLkOESpW92KZ/Fs2vfcD7J7zs8pKyFkct4J2YAlmgNMEpz9XPwWVrKX93psKIu8EoNRVX7KPtgIei2Mzis4raI8IpnC7mCz/BDbC/yjlF8j+pIsJ58ZFq15zrGJJwEgSr42thCa9ak69klmTRqyQEt6TVpvZPXX9/g2wHUpB8OF6d35qcADOhAX+my6reAKGItp7jmYCwENlU8fmZuxpgpYDIjeypQilPxRneWDukCK0gg1tfF7zQqw8OPts8B7OUE7AtZ7PnFkdtf8JT7o+bQDkuUeeV5fqtQp7oo=
+  app: albin-portfolio
+  on:
+    repo: DenmarkPolice/pfolio
