@@ -47,12 +47,15 @@ nav {
   width: 100px;
   background-color: $black;
   position: fixed;
+  opacity: 0.5;
+  z-index: 100;
 }
 
 .scroll {
   display: flex;
   height:100px;
   width: 100px;
+  opacity: 1;
   //Hover fade
   -moz-transition: all .2s ease-in;
   -o-transition: all .2s ease-in;
@@ -62,6 +65,55 @@ nav {
 
 nav > a > p {
   padding-left: 6px;
+}
+
+.main-img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(3px);
+  background-size: 100% auto;
+  z-index: -100;
+}
+
+.logo {
+  background-color: white;
+  z-index: 100;
+  color: $lessblack;
+  width: 200px;
+  margin-top: 3vh;
+  margin-left: 5.5vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo p {
+  text-align: center;
+}
+
+.logo .A {
+  font-size: 49px;
+  line-height: 40px;
+}
+
+.logo .P {
+  font-size: 58px;
+  line-height: 40px;
+}
+
+.logo .S {
+  font-size: 70px;
+  line-height: 55px;
+}
+
+h1 {
+  color: $white;
+  text-align: center;
+  font-family: 'Patua One', cursive;
+  font-size: 55px;
+  margin-top: 30vh;
 }
 
 .icon-container {
@@ -94,6 +146,7 @@ svg {
 
 svg:hover {
   fill: $Corange;
+  opacity: 1;
 }
 
 .scroll:hover {
