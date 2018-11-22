@@ -14,10 +14,22 @@ $(document).ready(function() {
     },1000);
 
     setTimeout(function() {
-      $(".A, .P, .S").animate({
+      $(".first").animate({
         opacity: 1
-      }, 1000 );
-    },1500);
+      }, 800 );
+    },1200);
+
+    setTimeout(function() {
+      $(".second").animate({
+        opacity: 1
+      }, 800 );
+    },1400);
+
+    setTimeout(function() {
+      $(".third").animate({
+        opacity: 1
+      }, 800 );
+    },1800);
 
     setTimeout(function() {
       $("nav").animate({

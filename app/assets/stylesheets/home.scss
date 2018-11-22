@@ -95,22 +95,23 @@ nav > a > p {
 }
 
 .logo .A {
-  opacity: 0;
   font-size: 49px;
   line-height: 40px;
 }
 
 .logo .P {
-  opacity: 0;
   font-size: 58px;
-  line-height: 40px; 4689kr Hallon 3200kr Vimla
+  line-height: 40px;
 }
 
 .logo .S {
-  opacity: 0;
   font-size: 70px;
   line-height: 55px;
 }
+.logo p span {
+  opacity: 0;
+}
+
 
 .intro {
   width: 100%;
