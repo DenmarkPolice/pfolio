@@ -4,21 +4,24 @@
 
 $(document).ready(function() {
     setTimeout(function() {
-        $("h1").fadeIn(1500);
-        $(".logo").animate({
-          width: 200
-        }, 2000 );
-    },2000);
+        $(".intro").fadeIn(1500);
+    },500);
+
+    setTimeout(function() {
+      $(".logo").animate({
+        width: 200
+      }, 2000 );
+    },1000);
 
     setTimeout(function() {
       $(".A, .P, .S").animate({
         opacity: 1
       }, 1000 );
-    },4000);
+    },1500);
 
     setTimeout(function() {
       $("nav").animate({
         left: 0
       }, 1000 );
-    },4500);
+    },2500);
 });

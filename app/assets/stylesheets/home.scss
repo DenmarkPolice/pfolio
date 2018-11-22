@@ -75,7 +75,7 @@ nav > a > p {
   width: 100vw;
   height: 100vh;
   filter: blur(3px);
-  background-size: 100% auto;
+  object-fit: cover;
   z-index: -100;
 }
 
@@ -103,7 +103,7 @@ nav > a > p {
 .logo .P {
   opacity: 0;
   font-size: 58px;
-  line-height: 40px;
+  line-height: 40px; 4689kr Hallon 3200kr Vimla
 }
 
 .logo .S {
@@ -112,12 +112,14 @@ nav > a > p {
   line-height: 55px;
 }
 
-h1 {
+.intro {
+  width: 100%;
+  position: absolute;
   color: $white;
   text-align: center;
   font-family: 'Patua One', cursive;
   font-size: 55px;
-  margin-top: 30vh;
+  top: 57%;
   display:none;
 }
 
