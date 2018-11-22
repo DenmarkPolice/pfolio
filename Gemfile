@@ -22,7 +22,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'wdm', '>= 0.1.0'
+gem 'jquery-rails'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -37,6 +38,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.8'
   gem 'deadweight', :require => 'deadweight/hijack/rails'
+  gem 'figaro'
 end
 
 group :development do
