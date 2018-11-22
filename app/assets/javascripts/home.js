@@ -15,4 +15,10 @@ $(document).ready(function() {
         opacity: 1
       }, 1000 );
     },4000);
+
+    setTimeout(function() {
+      $("nav").animate({
+        left: 0
+      }, 1000 );
+    },4500);
 });
