@@ -10,26 +10,26 @@ $(document).ready(function() {
     setTimeout(function() {
       $(".logo").animate({
         width: 200
-      }, 2000 );
+      }, 1000 );
     },1000);
 
     setTimeout(function() {
       $(".first").animate({
         opacity: 1
       }, 800 );
-    },1200);
+    },1500);
 
     setTimeout(function() {
       $(".second").animate({
         opacity: 1
       }, 800 );
-    },1400);
+    },1750);
 
     setTimeout(function() {
       $(".third").animate({
         opacity: 1
       }, 800 );
-    },1800);
+    },2000);
 
     setTimeout(function() {
       $("nav").animate({
