@@ -36,4 +36,47 @@ $(document).ready(function() {
         left: 0
       }, 1000 );
     },2500);
+
+    $(function(){
+        $('.scroll').on('click', function(){
+
+          setTimeout(function() {
+              $(".intro").fadeOut(1500);
+          },500);
+
+          setTimeout(function() {
+              $(".logo").animate({
+                width: 80,
+                "padding-top": 13,
+                "padding-bottom": 13
+              },1500);
+          },0);
+
+          setTimeout(function() {
+              $(".A").animate({
+                "font-size": 19,
+                "line-height": 7
+              },1500);
+
+              $(".P").animate({
+                "font-size": 23,
+                "line-height": 26
+              },1500);
+
+              $(".S").animate({
+                "font-size": 28,
+                "line-height": 12
+              },1500);
+          },0);
+
+
+          setTimeout(function() {
+            $(".logo").animate({
+              "margin-left": "10px",
+              "margin-top": "15px"
+            }, 1000 );
+          },0);
+
+        });
+    });
 });

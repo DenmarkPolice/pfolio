@@ -40,30 +40,6 @@ a {
   text-decoration:none;
 }
 
-nav {
-  top: 0;
-  left: -100px;
-  padding-top: 10vh;
-  height: 100vh;
-  width: 100px;
-  background-color: $black;
-  position: fixed;
-  opacity: 0.5;
-  z-index: 100;
-}
-
-.scroll {
-  display: flex;
-  height:100px;
-  width: 100px;
-  opacity: 1;
-  //Hover fade
-  -moz-transition: all .2s ease-in;
-  -o-transition: all .2s ease-in;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-}
-
 nav > a > p {
   padding-left: 6px;
 }
@@ -80,14 +56,20 @@ nav > a > p {
 }
 
 .logo {
+  position: relative;
   background-color: white;
   z-index: 100;
   color: $lessblack;
   width: 0px;
   margin-top: 3vh;
-  margin-left: 5.5vw;
+  margin-left: 7.5vw;
   padding-top: 20px;
   padding-bottom: 20px;
+  //No text target
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 .logo p {
@@ -173,7 +155,7 @@ p {
 }
 
 .nav-excluder {
-  padding-left: 100px;
+  //padding-left: 100px;
 }
 
 header {

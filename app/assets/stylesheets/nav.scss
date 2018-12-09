@@ -1,0 +1,115 @@
+$black: #333333;
+$lessblack: #4f4f4f;
+$white: #ffffff;
+$yellow: #ffe735;
+$lightgrey: #eaeaea;
+
+//Natural
+$darkgreen: #2E4600;
+$green: #486B00;
+$lime: #A2C523;
+$brown: #7D4427;
+
+//Starmont Church
+$Cblack: #282828;
+$Cgrey: #686868;
+$Cgreen: #00402e;
+$Clightgreen: #00805d;
+$Corange: #ffa500;
+
+//Mobalytics
+$Mdarkpurple: #0F0627;
+$Mpurple: #1d123e;
+$Myellow: #ffde4d;
+$Mgrey: #778ea5;
+$bluegrey: #36456A;
+
+a {
+  color: $white;
+  font-weight:normal;
+  text-decoration:none;
+}
+
+nav {
+  top: 0;
+  left: -100px;
+  padding-top: 120px;
+  height: 100vh;
+  width: 100px;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+  nav:after {
+    content:'';
+  }
+
+.scroll {
+  display: flex;
+  height:100px;
+  width: 100px;
+  opacity: 1;
+  //No text target
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  //Hover fade
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+nav > a > p {
+  padding-left: 6px;
+}
+
+.icon-container {
+  display: inline-flex;
+  position: absolute;
+  bottom: 0;
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+
+.links {
+  margin-left: 6.6px;
+  margin-bottom: 5px;
+  display: inline-block;
+  width: 35px;
+  height: auto;
+}
+
+svg {
+  enable-background:new 0 0 438.549 438.549;
+  width: 100%;
+  display: flex;
+  fill: $white;
+
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+svg:hover {
+  fill: $Corange;
+  opacity: 1;
+}
+
+.scroll:hover {
+  background-color: $white;
+  //-webkit-box-shadow: inset 0px 0px 5px 0px $black;
+  //-moz-box-shadow: inset 0px 0px 5px 0px $black;
+  //box-shadow: inset 0px 0px 5px 0px $black;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+
+p {
+  font-family: 'Patua One', cursive;
+  margin: 0;
+  padding: 0;
+}
