@@ -55,6 +55,49 @@ nav > a > p {
   z-index: -100;
 }
 
+.second-background {
+  opacity: 0;
+  background-color: $Cgrey;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: -99;
+  overflow: hidden;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.second-background::after {
+  content: '';
+  position:absolute;
+  left:-500px;
+  bottom:0px;
+  width: 70vw;
+  height: 80vh;
+  background-color: $white;
+  //rotation
+  -ms-transform: rotate(69.5deg); /* IE 9 */
+  -webkit-transform: rotate(69.5deg); /* Safari */
+  transform: rotate(69.5deg);
+}
+
+.second-background::before {
+  content: '';
+  position:absolute;
+  left:-480px;
+  bottom:0px;
+  width: 70vw;
+  height: 80vh;
+  background-color: $black;
+  //rotation
+  -ms-transform: rotate(70deg); /* IE 9 */
+  -webkit-transform: rotate(70deg); /* Safari */
+  transform: rotate(70deg);
+
+}
+
 .logo {
   position: relative;
   background-color: white;

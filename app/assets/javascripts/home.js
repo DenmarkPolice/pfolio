@@ -45,14 +45,15 @@ $(document).ready(function() {
           },500);
 
           setTimeout(function() {
+
               $(".logo").animate({
                 width: 80,
                 "padding-top": 13,
-                "padding-bottom": 13
+                "padding-bottom": 13,
+                "margin-left": "10px",
+                "margin-top": "15px"
               },1500);
-          },0);
 
-          setTimeout(function() {
               $(".A").animate({
                 "font-size": 19,
                 "line-height": 7
@@ -67,14 +68,14 @@ $(document).ready(function() {
                 "font-size": 28,
                 "line-height": 12
               },1500);
-          },0);
+
+              setTimeout(function() {
+                $(".second-background").animate({
+                  opacity: 1
+                }, 2500 );
+              },500);
 
 
-          setTimeout(function() {
-            $(".logo").animate({
-              "margin-left": "10px",
-              "margin-top": "15px"
-            }, 1000 );
           },0);
 
         });
