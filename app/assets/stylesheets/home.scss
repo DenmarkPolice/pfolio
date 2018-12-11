@@ -34,16 +34,6 @@ body {
   background-color: $white;
 }
 
-a {
-  color: $white;
-  font-weight:normal;
-  text-decoration:none;
-}
-
-nav > a > p {
-  padding-left: 6px;
-}
-
 .main-img {
   position:absolute;
   left:0px;
@@ -198,7 +188,7 @@ p {
 }
 
 .nav-excluder {
-  //padding-left: 100px;
+  padding-left: 100px;
 }
 
 header {
