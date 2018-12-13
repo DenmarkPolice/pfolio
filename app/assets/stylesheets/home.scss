@@ -62,29 +62,28 @@ body {
 .second-background::after {
   content: '';
   position:absolute;
-  left:-500px;
+  right:-32vw;
   bottom:0px;
   width: 70vw;
-  height: 80vh;
+  height: 100vh;
   background-color: $white;
   //rotation
-  -ms-transform: rotate(69.5deg); /* IE 9 */
-  -webkit-transform: rotate(69.5deg); /* Safari */
-  transform: rotate(69.5deg);
+  -ms-transform: rotate(93deg); /* IE 9 */
+  -webkit-transform: rotate(93deg); /* Safari */
+  transform: rotate(93deg);
 }
 
 .second-background::before {
   content: '';
   position:absolute;
-  left:-480px;
-  bottom:0px;
+  right: -30vw;
   width: 70vw;
-  height: 80vh;
+  height: 100vh;
   background-color: $black;
   //rotation
-  -ms-transform: rotate(70deg); /* IE 9 */
-  -webkit-transform: rotate(70deg); /* Safari */
-  transform: rotate(70deg);
+  -ms-transform: rotate(87deg); /* IE 9 */
+  -webkit-transform: rotate(87deg); /* Safari */
+  transform: rotate(87deg);
 
 }
 
