@@ -55,36 +55,6 @@ body {
   height: 100vh;
   z-index: -99;
   overflow: hidden;
-
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
-.second-background::after {
-  content: '';
-  position:absolute;
-  right:-32vw;
-  bottom:0px;
-  width: 70vw;
-  height: 100vh;
-  background-color: $white;
-  //rotation
-  -ms-transform: rotate(93deg); /* IE 9 */
-  -webkit-transform: rotate(93deg); /* Safari */
-  transform: rotate(93deg);
-}
-
-.second-background::before {
-  content: '';
-  position:absolute;
-  right: -30vw;
-  width: 70vw;
-  height: 100vh;
-  background-color: $black;
-  //rotation
-  -ms-transform: rotate(87deg); /* IE 9 */
-  -webkit-transform: rotate(87deg); /* Safari */
-  transform: rotate(87deg);
-
 }
 
 .logo {

@@ -70,6 +70,12 @@ $(document).ready(function() {
               },1500);
 
               setTimeout(function() {
+                $("nav").animate({
+                  left: "-200px"
+                }, 1000 );
+              },2500);
+
+              setTimeout(function() {
                 $(".second-background").animate({
                   opacity: 1
                 }, 2500 );
