@@ -82,6 +82,10 @@ nav > a > p {
   height: auto;
 }
 
+#Lager_1 {
+    fill: $lessblack;
+}
+
 svg {
   enable-background:new 0 0 438.549 438.549;
   width: 100%;
@@ -94,7 +98,7 @@ svg {
   transition: all .2s ease-in;
 }
 
-svg:hover {
+a > svg:hover {
   fill: $Corange;
   opacity: 1;
 }

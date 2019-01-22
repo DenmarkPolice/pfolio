@@ -124,32 +124,6 @@ body {
   height: auto;
 }
 
-svg {
-  enable-background:new 0 0 438.549 438.549;
-  width: 100%;
-  display: flex;
-  fill: $white;
-
-  -moz-transition: all .2s ease-in;
-  -o-transition: all .2s ease-in;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-}
-
-svg:hover {
-  fill: $Corange;
-  opacity: 1;
-}
-
-.scroll:hover {
-  background-color: $white;
-  //-webkit-box-shadow: inset 0px 0px 5px 0px $black;
-  //-moz-box-shadow: inset 0px 0px 5px 0px $black;
-  //box-shadow: inset 0px 0px 5px 0px $black;
-  color: $black;
-
-}
-
 p {
   font-family: 'Patua One', cursive;
   margin: 0;
