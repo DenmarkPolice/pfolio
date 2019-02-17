@@ -50,11 +50,6 @@ nav {
   height:100px;
   width: 100px;
   opacity: 1;
-  //No text target
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
   //Hover fade
   -moz-transition: all .2s ease-in;
   -o-transition: all .2s ease-in;
@@ -82,7 +77,7 @@ nav > a > p {
   height: auto;
 }
 
-svg {
+a svg {
   enable-background:new 0 0 438.549 438.549;
   width: 100%;
   display: flex;
@@ -92,15 +87,6 @@ svg {
   -o-transition: all .2s ease-in;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
-}
-
-.second-background svg {
-    width: 100%;
-    height: 100%;
-}
-
-#Lager_1 {
-  fill: $lessblack;
 }
 
 a svg:hover {

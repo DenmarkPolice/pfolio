@@ -1,15 +1,15 @@
 <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 <%= javascript_include_tag "home.js" %>
 <nav>
-  <a class="scroll">
+  <a href="#" class="scroll">
     <p>Projects</p>
   </a>
 
-  <a class="scroll">
+  <a href="#" class="scroll">
     <p>Skills</p>
   </a>
 
-  <a class="scroll">
+  <a href="#" class="scroll">
     <p>About me</p>
   </a>
   <div class="icon-container">
@@ -63,19 +63,24 @@
   </div>
 </nav>
 <div class="second-background">
-  
-  <?xml version="1.0" encoding="iso-8859-1"?>
-  <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  	 viewBox="0 0 3840 2160" style="enable-background:new 0 0 3840 2160;" xml:space="preserve">
-  <g id="Lager_2">
-  	<rect x="504.803" style="fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;" width="3335.197" height="2160"/>
-  </g>
-  <g id="Lager_1">
 
-  		<rect id="XMLID_1_" x="-65.469" y="-48.631" transform="matrix(0.9994 -0.0349 0.0349 0.9994 -37.4652 18.2768)" width="1140.545" height="2261.908"/>
-  </g>
-  </svg>
+  <%= inline_svg "second-background.svg", class: 'background-svg' %>
+
+  <div class="second-scroll-container">
+
+    <a href="#" class="second-scroll">
+      <p>På bar backe</p>
+    </a>
+
+    <a href="#" class="second-scroll">
+      <p>Exempel 2</p>
+    </a>
+
+    <a href="#" class="second-scroll">
+      <p>Annan sida</p>
+    </a>
+    
+  </div>
 
 </div>
 <%= image_tag "main.png", class: "main-img" %>
@@ -85,25 +90,3 @@
   <p class="P all"><span class="third">P</span><span class="first">ER</span><span class="second">S</span></p>
   <p class="S all"><span class="first">S</span><span class="second">O</span><span class="third">N</span></p>
 </div>
-<!--
-<div class="introduction">
-  <div class="border">
-    <%= image_tag "Albin.jpg", class: "profile-pic" %>
-  </div>
-  <div class="introduction-text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-       elit. Cras ante leo, blandit vel dui sed, elementum
-       gravida magna. Curabitur cursus, dui id tempor auctor,
-       enim arcu varius nisl, quis tempus erat purus et est.
-       Duis pulvinar lorem ac justo aliquet viverra.
-       Duis et augue ac enim auctor tempor. Vestibulum ligula nisl,
-       tincidunt id tortor quis, tincidunt dictum elit. Aliquam at
-       hendrerit enim. Suspendisse non ipsum eget dui vestibulum
-       iaculis vitae a neque. Vestibulum ante xd ipsum primis in
-       faucibus orci luctus et ultrices posuere cubilia Curae;
-       Mauris pulvinar facilisis mi et semper. Vestibulum eleifend
-       turpis diam, id luctus nibh feugiat non.
-    </p>
-  </div>
-</div>
--->

@@ -181,3 +181,23 @@ header {
 .introduction-text > p {
   color: #6F6885;
 }
+
+.second-scroll-container {
+  position:absolute;
+  top: 150px;
+  left: 0px;
+}
+
+.second-scroll {
+  display: flex;
+  padding-left: 4vw;
+  font-size: 35px;
+  width: 15vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.second-scroll:hover {
+  background-color: #FFFFFF;
+  color: $lessblack;
+}
