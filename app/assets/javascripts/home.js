@@ -1,6 +1,8 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 
+var tested = "true";
+var tester = 0;
 
 $(document).ready(function() {
     setTimeout(function() {
@@ -37,6 +39,24 @@ $(document).ready(function() {
       }, 1000 );
     },2500);
 
+    $(document).click(function(event) {
+      var text = $(event.target).text();
+      tested = "false";
+      tester = 0;
+      console.log("Click_event");
+      console.log(tested == "false");
+      $
+
+    });
+
+    while (tested == "false") {
+
+      console.log("tested");
+      if (tester > 4) {
+        tested = "true";
+      }
+      tester += 1;
+    }
     $(function(){
         $('.scroll').on('click', function(){
 
