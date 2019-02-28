@@ -195,6 +195,8 @@ header {
   width: 15vw;
   padding-top: 2vh;
   padding-bottom: 2vh;
+  pointer-events: none;
+  cursor: default;
 }
 
 .second-scroll:hover {

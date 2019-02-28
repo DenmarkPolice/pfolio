@@ -1,8 +1,17 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 
+var text = "";
 var tested = "true";
 var tester = 0;
+var assignAllDiv = 0;
+var divs = [
+      "På bar backe",
+      "Exempel 2",
+      "Annan sida",
+      "Fler sidor",
+      "Jag gjorde den"
+    ];
 
 $(document).ready(function() {
     setTimeout(function() {
@@ -43,20 +52,10 @@ $(document).ready(function() {
       var text = $(event.target).text();
       tested = "false";
       tester = 0;
-      console.log("Click_event");
-      console.log(tested == "false");
-      $
-
+      assignAllDivCounter = 0;
+      displayHelper(text);
     });
 
-    while (tested == "false") {
-
-      console.log("tested");
-      if (tester > 4) {
-        tested = "true";
-      }
-      tester += 1;
-    }
     $(function(){
         $('.scroll').on('click', function(){
 
@@ -101,9 +100,48 @@ $(document).ready(function() {
                 }, 2500 );
               },500);
 
+              setTimeout(function() {
+                $(".second-scroll").css({"pointer-events": "initial","cursor": "pointer"});
+              },500);
 
           },0);
 
         });
     });
 });
+
+//Helper functions
+
+
+function displayHelper(text) {
+  while (tested == "false") {
+
+    if (text == divs[tester]) {
+
+      targetDiv = ".sScroll" + tester;
+      $(targetDiv).css({"opacity": "1"});
+
+      assignAllDiv = tester;
+      assignAllDiv += 1;
+      while (assignAllDivCounter < 4) {
+
+        if (assignAllDiv == 5) {
+          assignAllDiv = 0;
+        }
+
+        targetDiv = ".sScroll" + assignAllDiv;
+        $(targetDiv).css({"opacity": "0"});
+
+
+        assignAllDiv += 1;
+        assignAllDivCounter += 1;
+      }
+      tested = "true";
+    }
+
+    if (tester > 5) {
+      tested = "true";
+    }
+    tester += 1;
+  }
+}
