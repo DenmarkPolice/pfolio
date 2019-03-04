@@ -53,6 +53,7 @@ $(document).ready(function() {
       tested = "false";
       tester = 0;
       assignAllDivCounter = 0;
+
       displayHelper(text);
     });
 
@@ -112,14 +113,14 @@ $(document).ready(function() {
 
 //Helper functions
 
-
 function displayHelper(text) {
   while (tested == "false") {
 
     if (text == divs[tester]) {
 
       targetDiv = ".sScroll" + tester;
-      $(targetDiv).css({"opacity": "1"});
+      $(targetDiv).css({"opacity": "1","pointer-events": "initial","cursor": "pointer"});
+
 
       assignAllDiv = tester;
       assignAllDiv += 1;
@@ -130,7 +131,7 @@ function displayHelper(text) {
         }
 
         targetDiv = ".sScroll" + assignAllDiv;
-        $(targetDiv).css({"opacity": "0"});
+        $(targetDiv).css({"opacity": "0","pointer-events": "none","cursor": "default"});
 
 
         assignAllDiv += 1;
