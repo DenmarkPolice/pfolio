@@ -69,36 +69,48 @@
   <div class="second-scroll-container">
 
     <a href="#" class="sScroll0">
-      <p class="second-scroll">På bar backe</p>
+      <p class="second-scroll sScroll0">På bar backe</p>
     </a>
 
     <a href="#" class="sScroll1">
-      <p class="second-scroll">Exempel 2</p>
+      <p class="second-scroll sScroll1">Exempel 2</p>
     </a>
 
     <a href="#" class="sScroll2">
-      <p class="second-scroll">Annan sida</p>
+      <p class="second-scroll sScroll2">Annan sida</p>
     </a>
 
     <a href="#" class="sScroll3">
-      <p class="second-scroll">Fler sidor</p>
+      <p class="second-scroll sScroll3">Fler sidor</p>
     </a>
 
     <a href="#" class="sScroll4">
-      <p class="second-scroll">Jag gjorde den</p>
+      <p class="second-scroll sScroll4">Jag gjorde den</p>
     </a>
 
   </div>
 
   <div class="second-background-content-container">
 
-    <div class="sScontent0">
+    <div class="sScontent0 sScontent">
       <%= image_tag "pabarbacke.jpg", class: "sScontent-img" %>
-      <div class="sScontent-cutoff"></div>
 
+      <div class="sScontent-container">
+        <div class="sScontent-cutoff-container">
+          <div class="sScontent-cutoff"></div>
+          <p class="sScontent-cutoff-text">Explore project</p>
+          <div class="sScontent-cutoff"></div>
+        </div>
+        <div class="sScontent-button-container">
+          <button class="custom-btn btn-4"><span>Github</span></button>
+          <button class="custom-btn btn-4"><span>Site</span></button>
+        </div>
+      </div>
+
+    </div>
   </div>
-
 </div>
+
 <%= image_tag "main.png", class: "main-img" %>
 <div class="intro">A different experience</div>
 <div class="logo">

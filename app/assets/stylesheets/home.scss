@@ -6,7 +6,7 @@ $black: #333333;
 $lessblack: #4f4f4f;
 $white: #ffffff;
 $yellow: #ffe735;
-$lightgrey: #eaeaea;
+$lightgrey: #a3a3a3;
 
 //Natural
 $darkgreen: #2E4600;
@@ -21,12 +21,7 @@ $Cgreen: #00402e;
 $Clightgreen: #00805d;
 $Corange: #ffa500;
 
-//Mobalytics
-$Mdarkpurple: #0F0627;
-$Mpurple: #1d123e;
 $Myellow: #ffde4d;
-$Mgrey: #778ea5;
-$bluegrey: #36456A;
 
 body {
   padding: 0;
@@ -202,4 +197,128 @@ header {
 .second-scroll:hover {
   background-color: #FFFFFF;
   color: $lessblack;
+}
+
+.second-background-content-container {
+  display: relative;
+  position: absolute;
+  padding-top: 10vh;
+  top: 0;
+  left: 18vw;
+  width: 80vw;
+}
+
+.sScontent {
+  opacity: 0;
+}
+
+.sScontent-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sScontent-img {
+  width: 30vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sScontent-cutoff-container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.sScontent-cutoff {
+  margin-top: 13px;
+  margin-right: 4px;
+  margin-left: 4px;
+  background-color: $lightgrey;
+  height: 1px;
+  width: 12vw;
+}
+
+.sScontent-button-container {
+  margin: auto;
+}
+
+.sScontent-cutoff-text {
+  font-size: 20px;
+  color: #909090;
+}
+
+//custom btn by Ahmed Beheiryy
+
+button {
+  margin: 20px;
+}
+.custom-btn {
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.btn-4 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-4 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-4:before,
+.btn-4:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #000;
+  transition: all 0.3s ease;
+}
+.btn-4:before {
+  height: 50%;
+  width: 2px;
+}
+.btn-4:after {
+  width: 20%;
+  height: 2px;
+}
+.btn-4:hover:before {
+  height: 100%;
+}
+.btn-4:hover:after {
+  width: 100%;
+}
+.btn-4 span:before,
+.btn-4 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #000;
+  transition: all 0.3s ease;
+}
+.btn-4 span:before {
+  width: 2px;
+  height: 50%;
+}
+.btn-4 span:after {
+  width: 20%;
+  height: 2px;
+}
+.btn-4 span:hover:before {
+  height: 100%;
+}
+.btn-4 span:hover:after {
+  width: 100%;
 }

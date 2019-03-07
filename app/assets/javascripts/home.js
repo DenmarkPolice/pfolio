@@ -55,6 +55,8 @@ $(document).ready(function() {
       assignAllDivCounter = 0;
 
       displayHelper(text);
+
+      console.log("complete");
     });
 
     $(function(){
@@ -118,9 +120,17 @@ function displayHelper(text) {
 
     if (text == divs[tester]) {
 
-      targetDiv = ".sScroll" + tester;
-      $(targetDiv).css({"opacity": "1","pointer-events": "initial","cursor": "pointer"});
+      menuDiv = ".sScroll" + tester;
+      $(menuDiv).css({
+        "pointer-events": "none",
+        "cursor": "default"//,
+        //"background-color": "#FFFFFF",
+        //"color": "#4f4f4f"
+      });
 
+
+      targetDiv = ".sScontent" + tester;
+      $(targetDiv).animate({"opacity": "1"}, 1500 );
 
       assignAllDiv = tester;
       assignAllDiv += 1;
@@ -130,9 +140,12 @@ function displayHelper(text) {
           assignAllDiv = 0;
         }
 
-        targetDiv = ".sScroll" + assignAllDiv;
-        $(targetDiv).css({"opacity": "0","pointer-events": "none","cursor": "default"});
+        menuDiv = ".sScroll" + assignAllDiv;
+        $(menuDiv).css({"pointer-events": "initial","cursor": "pointer"});
+        //$(menuDiv).css({"background-color": "#","color": "#FFFFFF"});
 
+        targetDiv = ".sScontent" + assignAllDiv;
+        $(targetDiv).animate({"opacity": "0"}, 1500 );
 
         assignAllDiv += 1;
         assignAllDivCounter += 1;
